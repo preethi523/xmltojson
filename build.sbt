@@ -8,8 +8,16 @@ lazy val root = (project in file("."))
   )
 libraryDependencies +="com.typesafe.play" %% "play-json" % "2.9.2"
 
-libraryDependencies += "ai.x" %% "play-json-extensions" % "0.10.0"
-
 libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.0.1"
+
+libraryDependencies += "com.typesafe" % "config" % "1.3.3"
 //
 //libraryDependencies += "com.lucidchart" %% "xtract" % "2.2.1"
+//
+//libraryDependencies += "nl.elmar" %% "xml-reader" % "0.12"
+////
+//libraryDependencies += "com.lucidchart" %% "xtract" % "2.2.1"
+
+//
+//libraryDependencies += "ai.x" %% "play-json-extensions" % "0.10.0"
+
