@@ -30,7 +30,11 @@ object Xml extends App {
   val rootConf =applicationConf.getString("rootValue")
   case class Person(var firstName: String, var lastName: String, var address: String, var phoneNumber: String)
 
-
+  /***
+   *  get values convert case class to listBuffer
+   * @param person case class person
+   * @return listBuffer of case clas values
+   */
 
 def getValues(person:Person):ListBuffer[String]={
   val classValue = ListBuffer[String]()
@@ -43,7 +47,7 @@ def getValues(person:Person):ListBuffer[String]={
 
 
   /** *
-   *
+   *convert list of json Value to string
    * @param jsonList List of json
    * @return a string in xml format
    */

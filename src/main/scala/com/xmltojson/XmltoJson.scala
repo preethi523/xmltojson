@@ -6,6 +6,12 @@ object Json extends App {
   val xml = XML.loadFile("/home/preethia/xmltojson/xml")
   val root = s"{\"${xml.label}\":{"
 
+  /***
+   * converts xml to json
+   * @param xml Elem of an xml
+   * @return returns string of json format
+   */
+
   def xmlToJson(xml: Elem) = {
     var resultEmpty = ""
     var personPrint = ""
